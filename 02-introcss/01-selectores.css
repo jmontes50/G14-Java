@@ -13,3 +13,18 @@ p {
   font-weight: bold;
   color: green;
 }
+
+/* selectores de id */
+#btn {
+  background: yellow;
+}
+
+/* operadores */
+/* el espacio, toma todos los li que esten dentro de un ul no importa el nivel en el que se encuentren los li */
+ul li {
+  color:steelblue;
+}
+
+ul > li {
+  font-weight: bold;
+}
