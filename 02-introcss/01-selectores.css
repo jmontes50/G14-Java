@@ -30,6 +30,16 @@ ul > li {
   font-weight: bold;
 }
 
+/* , Es el equivalente a un Y */
 .series, .idioma-espanol {
   border:2px solid red;
+}
+
+/* + a los 1eros elementos adyacentes, en este caso a los primeros div que estan después de un h2 */
+h2 + div {
+  color: orangered;
+}
+
+h2 ~ div {
+  font-family: Impact;
 }
