@@ -73,6 +73,18 @@
         <input type="checkbox" id="hobby-lectura" name="hobby">
         <label for="hobby-lectura" name="">Lectura</label>
       </div>
+      <label for="input-departamento">Departamento</label>
+      <select id="input-departamento" name="departamento">
+        <option value="" selected disabled>Selecciona tu departamento</option>
+        <!-- El value no tiene que ser necesariamente el mismo que el texto, en caso de no tener value toma el texto como value -->
+        <option value="LIM">Lima</option>
+        <option value="ARE">Arequipa</option>
+        <option value="CUS">Cusco</option>
+        <option value="PIU">Piura</option>
+        <option value="TRU">Trujillo</option>
+      </select>
+
+      <br>
       <button type="submit">Enviar</button>
     </form>
   </main>
