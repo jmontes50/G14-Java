@@ -12,18 +12,18 @@
   </header>
   <main>
     <form>
-      <label for="input-nombre">Nombres completos</label>
-      <input type="text" placeholder="Ej. Juan" id="input-nombre" value="" name="nombre">
+      <label for="input-nombre">Nombres completos *</label>
+      <input type="text" placeholder="Ej. Juan" id="input-nombre" value="" name="nombre" required>
       <!-- br - break - salto de línea-->
       <br>
       <label for="input-email">Correo electrónico</label>
       <input type="email" placeholder="Ej.user@gmail.com" id="input-email" name="email">
       <br>
       <label for="input-password">Contraseña</label>
-      <input type="password" placeholder="Se requieren al menos 6 caracteres" id="input-password" name="password">
+      <input type="password" placeholder="Se requieren al menos 6 caracteres" id="input-password" name="password" minlength="6" maxlength="12" pattern="" required title="La contraseña debe tener al menos 01 Mayúscula, 01 símbolo y 01 dígito">
       <br>
       <label for="input-edad">Edad</label>
-      <input type="number" placeholder="Ej. 25" id="input-edad" name="edad">
+      <input type="number" placeholder="Ej. 25" id="input-edad" name="edad" min="18" max="99">
       <br>
       <label for="input-fecha">Fecha de nacimiento</label>
       <input type="date" id="input-fecha" name="fecha">
