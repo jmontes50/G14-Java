@@ -40,6 +40,8 @@ h2 + div {
   color: orangered;
 }
 
+
+/* aplicar estilos a los elementos debajo del primer selector, a todos los div que esten debajo de un h2 (como hermanos que están por debajo) */
 h2 ~ div {
   font-family: Impact;
 }
