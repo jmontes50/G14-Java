@@ -1,3 +1,15 @@
+/* selector universal */
+* {
+  text-decoration: underline;
+}
+
+/* selector etiqueta */
 p {
-   color:blue; 
+  color: blue;
+}
+
+/* selector por clase */
+.p-importante {
+  font-weight: bold;
+  color: green;
 }
