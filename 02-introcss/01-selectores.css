@@ -29,3 +29,7 @@ ul li {
 ul > li {
   font-weight: bold;
 }
+
+.series, .idioma-espanol {
+  border:2px solid red;
+}
