@@ -25,6 +25,7 @@ ul li {
   color:steelblue;
 }
 
+/* lo que hace el operador > es tomar los PRIMEROS HIJOS de tipo li de los ul  */
 ul > li {
   font-weight: bold;
 }
