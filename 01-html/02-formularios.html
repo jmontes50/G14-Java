@@ -13,45 +13,20 @@
   <main>
     <form>
       <label for="input-nombre">Nombres completos</label>
-      <input 
-        type="text"
-        placeholder="Ej. Juan"
-        id="input-nombre"
-        value=""
-        name="nombre"
-      >
+      <input type="text" placeholder="Ej. Juan" id="input-nombre" value="" name="nombre">
       <!-- br - break - salto de línea-->
       <br>
       <label for="input-email">Correo electrónico</label>
-      <input
-        type="email"
-        placeholder="Ej.user@gmail.com"
-        id="input-email"
-        name="email"
-      >
+      <input type="email" placeholder="Ej.user@gmail.com" id="input-email" name="email">
       <br>
       <label for="input-password">Contraseña</label>
-      <input
-        type="password"
-        placeholder="Se requieren al menos 6 caracteres"
-        id="input-password"
-        name="password"
-      >
+      <input type="password" placeholder="Se requieren al menos 6 caracteres" id="input-password" name="password">
       <br>
       <label for="input-edad">Edad</label>
-      <input
-        type="number"
-        placeholder="Ej. 25"
-        id="input-edad"
-        name="edad"
-      >
+      <input type="number" placeholder="Ej. 25" id="input-edad" name="edad">
       <br>
       <label for="input-fecha">Fecha de nacimiento</label>
-      <input
-        type="date"
-        id="input-fecha"
-        name="fecha"
-      >
+      <input type="date" id="input-fecha" name="fecha">
       <br>
       <div>
         <h4>Género</h4>
@@ -83,7 +58,25 @@
         <option value="PIU">Piura</option>
         <option value="TRU">Trujillo</option>
       </select>
-
+      <br>
+      <label for="input-cursos">Cursos</label>
+      <input 
+        list="input-cursos" 
+        name="cursos" 
+        placeholder="busque el curso que le interese"
+      >
+      <datalist id="input-cursos" name="cursos">
+        <option value="HTML">
+        <option value="CSS">
+        <option value="JavaScript">
+        <option value="Python">
+        <option value="SQL">
+        <option value="Java">
+        <option value="React">
+        <option value="Ruby">
+        <option value="Node.js">
+        <option value="Django">
+      </datalist>
       <br>
       <button type="submit">Enviar</button>
     </form>
