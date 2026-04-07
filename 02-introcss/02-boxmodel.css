@@ -1,7 +1,7 @@
 /*reseteo css*/
 * { 
-  margin:0;
-  padding:0;
+  margin:0; /*externo*/
+  padding:0; /*interno*/
   box-sizing: border-box;
 }
 
@@ -21,3 +21,17 @@ h2 {
   padding: 40px;
   border:2px solid blue;
 }
+
+article {
+  /*para el margin y padding la forma de indicar el tamaño de ambos puede variar*/
+  border:2px solid purple;
+  /*top - superior, bottom - inferior, left - izq, right - der*/
+  /*margin-bottom: 40px*/
+  padding-top: 30px;
+  /*---------*/
+  /*con dos valores se asigna el mismo valor a ambos lados, el primer valor es para top y bottom, el segundo valor es para left y right*/
+  /* margin: 20px 40px; */
+  /*si son 04 valores, se asigna el valor a cada lado en el orden top, right, bottom, left*/
+  margin: 20px 40px 60px 80px;
+}
+
