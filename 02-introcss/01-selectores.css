@@ -52,10 +52,10 @@ table {
 }
 
 /* pseudoclases */
-td {
+/* td {
   border: 2px solid black;
 
-}
+} */
 
 td:hover {
   text-decoration: none;
@@ -63,6 +63,21 @@ td:hover {
   cursor: pointer;
 }
 
+/*nth Nth (Fourth) al cuarto elemento que tenga ese selector*/
 td:nth-of-type(1){
   background-color: blue;
+}
+
+td:nth-of-type(2){
+  background-color: skyblue;
+}
+
+/* odd -> impar */
+tr:nth-of-type(odd){
+  border:2px solid green;
+}
+
+/*even - par */
+tr:nth-of-type(even){
+  border:2px solid red;
 }
