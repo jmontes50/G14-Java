@@ -45,3 +45,10 @@ li {
   border-color: orangered;
   display: inline-block;
 }
+
+.escondido {
+  /*display none hace que no se dibuje el o los elementos*/
+  display: none;
+  /*visibility hidden hace elementos invisibles*/
+  /* visibility: hidden; */
+}
