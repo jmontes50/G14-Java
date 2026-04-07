@@ -29,6 +29,9 @@ span {
 }
 
 input, button {
+  /*inline-block es una mezcla entre block e inline, lo que significa que ocupan solo el espacio necesario para su contenido pero se comportan como bloques, permitiendo establecer dimensiones y márgenes*/
+  /*tienen un espaciado entre ellos, esto se debe a que los elementos inline-block respetan los espacios en blanco en el código HTML, lo que puede crear un espacio adicional entre ellos.*/
+  /*NO USAR INLINE BLOCK, dejarlo los elementos que lo tienen x defecto*/
   width: 120px;
 }
 
