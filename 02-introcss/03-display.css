@@ -27,3 +27,18 @@ span {
   display: inline;
   width:400px;
 }
+
+input, button {
+  width: 120px;
+}
+
+.links {
+  width:304px;
+  border-color:green;
+}
+
+li {
+  width:96px;
+  border-color: orangered;
+  display: inline-block;
+}
