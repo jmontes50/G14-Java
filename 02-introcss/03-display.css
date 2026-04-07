@@ -23,6 +23,7 @@ h5 {
 
 span {
   background-color: yellow;
+  /*display: inline; por defecto los span son inline, lo que significa que solo ocupan el espacio necesario para su contenido y se alinean horizontalmente con otros elementos en la misma línea*/
   display: inline;
   width:400px;
 }
