@@ -1,0 +1,22 @@
+* {
+  /*reset*/
+  margin:0;
+  bottom: 0;
+  box-sizing: border-box;
+
+  border:2px solid red;
+}
+
+/* La gran mayoria de elementos tendrán un display block, lo que significa que ocuparan todo el ancho disponible y se apilaran uno debajo del otro, como bloques de Lego encajados uno encima de otro */
+
+h1 {
+  width: 150px;
+  display:block;
+  border-color:blue;
+}
+
+h5 {
+  width:150px;
+  display:block;
+  border-color:purple;
+}
