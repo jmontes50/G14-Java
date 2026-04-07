@@ -86,7 +86,7 @@ tr:nth-of-type(even){
 input::placeholder {
   font-weight: 500;
   color:purple;
-  text-transform: uppercase;;
+  text-transform: uppercase;
 }
 
 /* before - antes */
@@ -97,3 +97,29 @@ button::before {
 button:after {
   content:"-----------"
 }
+
+/*ESPECIFICIDAD*/
+
+td:hover {
+  color: purple;
+  font-weight: 500;
+  
+}
+/*es mas especifica, id referencia solo a un elemento*/
+#btn-enviar {
+  color: peru;
+}
+
+/*es mas especifica, a un grupo o a uno*/
+.btn {
+  color: blue;
+}
+
+button {
+  color: green;
+}
+/*podria afectar a cualquiera*/
+button {
+  color: orangered;
+}
+
