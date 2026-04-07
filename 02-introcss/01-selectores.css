@@ -45,3 +45,24 @@ h2 + div {
 h2 ~ div {
   font-family: Impact;
 }
+
+/* tabla */
+table {
+  border-collapse: collapse ;
+}
+
+/* pseudoclases */
+td {
+  border: 2px solid black;
+
+}
+
+td:hover {
+  text-decoration: none;
+  color:red;
+  cursor: pointer;
+}
+
+td:nth-of-type(1){
+  background-color: blue;
+}
