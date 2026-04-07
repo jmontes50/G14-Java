@@ -112,6 +112,8 @@ td:hover {
 
 /*es mas especifica, a un grupo o a uno*/
 .btn {
+  /* Usar important no es buena práctica */
+  /* color: blue !important; */
   color: blue;
 }
 
