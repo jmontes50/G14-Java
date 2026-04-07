@@ -81,3 +81,19 @@ tr:nth-of-type(odd){
 tr:nth-of-type(even){
   border:2px solid red;
 }
+
+/* pseudo elementos */
+input::placeholder {
+  font-weight: 500;
+  color:purple;
+  text-transform: uppercase;;
+}
+
+/* before - antes */
+button::before {
+  content: "-----"
+}
+
+button:after {
+  content:"-----------"
+}
