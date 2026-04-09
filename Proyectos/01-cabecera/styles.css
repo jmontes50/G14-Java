@@ -56,3 +56,22 @@ img {
   margin:0 auto;
   margin-bottom: 24px;
 }
+
+/* geometría forma, propiedades repetitivas */
+.btn {
+  padding: 20px 30px;
+  border-radius: 50px;
+}
+
+/*modificador*/
+.btn-white {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+}
+
+/*modificador*/
+.btn-black {
+  background-color: black;
+  color: white;
+}
