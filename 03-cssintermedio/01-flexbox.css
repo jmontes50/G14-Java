@@ -7,7 +7,7 @@
 .padre {
   border:2px solid red;
   width: 800px;
-  height: 600px;
+  height: 800px;
   /* flex */
   display: flex;
   /* horizontal */
@@ -17,6 +17,9 @@
   justify-content: space-around;
   /* vertical */
   align-items: center;
+  /* dirección */
+  flex-direction: row;
+  /* row-reverse, column, column-reverse */
 }
 
 .hijo {
