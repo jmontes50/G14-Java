@@ -1,0 +1,16 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.padre {
+  border:2px solid red;
+  width: 800px;
+}
+
+.hijo {
+  border:2px solid blue;
+  width:100px;
+  height: 100px;
+}
