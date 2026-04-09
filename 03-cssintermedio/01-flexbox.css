@@ -22,6 +22,9 @@
   /* row-reverse, column, column-reverse */
   flex-wrap: nowrap;
   /* wrap, respeta las medidas de los elementos hijos colapsandolos a la parte inferior, nowrap hace que se ajusten pero se mantengan juntos */
+  /*brecha, es un espacio mínimo obligatorio entre elementos*/
+   /* gap:30px; */
+
 }
 
 .hijo {
@@ -38,3 +41,17 @@
   padding:30px;
 } */
 /*baseline*/
+
+/*shrink cambia la proporción al faltar espacio con un nowrap*/
+.hijo6 {
+  flex-shrink: 4;
+}
+
+/*grow, cambia la proporción de crecimiento en base al espacio sobrante*/
+.hijo2 {
+  flex-grow: 8;
+}
+
+.hijo5 {
+  flex-grow: 2;
+}
