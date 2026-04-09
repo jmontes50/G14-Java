@@ -6,8 +6,8 @@
 
 .padre {
   border:2px solid red;
-  width: 800px;
-  height: 800px;
+  max-width: 800px;
+  height: 600px;
   /* flex */
   display: flex;
   /* horizontal */
@@ -20,6 +20,8 @@
   /* dirección */
   flex-direction: row;
   /* row-reverse, column, column-reverse */
+  flex-wrap: nowrap;
+  /* wrap, respeta las medidas de los elementos hijos colapsandolos a la parte inferior, nowrap hace que se ajusten pero se mantengan juntos */
 }
 
 .hijo {
