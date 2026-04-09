@@ -50,9 +50,6 @@ img {
 }
 
 .header-buttons {
-  /* cuando tenemos margenes horizontales por ejemplo arriba y abajo, estos colapsan dejando solamente el de arriba */
-  /* margin-top:200px; */
-  width: 150px;
+  width: 300px;
   margin:0 auto;
-  margin-bottom: 24px;
 }
