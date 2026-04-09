@@ -11,7 +11,15 @@
 /* 1. Selectores de etiqueta (estilos base) */
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Fraunces', serif;
+  font-weight:300;
+  text-align: center;
+}
+
+p {
+  font-family: 'Alata', sans-serif;
+  font-weight:300;
 }
 
 img {
@@ -19,4 +27,11 @@ img {
   /* 100%, es una unidad porcentual que esta definida por el elemento padre contenedor*/
   max-width: 100%;
   display: block;
+}
+
+/* utilidades/clases generales */
+.container {
+  max-width: 100%;
+  width:900px;
+  margin: 0 auto;
 }
