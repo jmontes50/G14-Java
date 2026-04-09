@@ -29,6 +29,10 @@ img {
   display: block;
 }
 
+button {
+  font-family: 'Alata', sans-serif;
+}
+
 /* 2. utilidades/clases generales */
 .container {
   max-width: 100%;
@@ -45,6 +49,7 @@ img {
 }
 
 .header-paragraph {
+  color:gray;
   font-size: 20px;
   margin-bottom: 24px;
 }
@@ -52,7 +57,7 @@ img {
 .header-buttons {
   /* cuando tenemos margenes horizontales por ejemplo arriba y abajo, estos colapsan dejando solamente el de arriba */
   /* margin-top:200px; */
-  width: 150px;
+  width: 260px;
   margin:0 auto;
   margin-bottom: 24px;
 }
@@ -75,3 +80,6 @@ img {
   background-color: black;
   color: white;
 }
+
+/*es muy diferente poner por ejemplo una clase que se llame .box o .cajita, donde esa clase se use por ejemplo en una tarjeta que muestre un producto, en ves podemos usar card_product */
+
