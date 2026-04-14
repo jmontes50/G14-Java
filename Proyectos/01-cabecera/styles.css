@@ -45,6 +45,10 @@ button {
   font-family: 'Alata', sans-serif;
 }
 
+ul {
+  list-style: none;
+}
+
 /* 2. utilidades/clases generales */
 .container {
   max-width: 100%;
@@ -54,6 +58,19 @@ button {
 }
 
 /* 3. Layout */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 42px 0;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  gap:20px;
+  align-items: center;
+}
 
 .header-title {
   font-size: 72px;
