@@ -83,3 +83,17 @@ button {
 
 /*es muy diferente poner por ejemplo una clase que se llame .box o .cajita, donde esa clase se use por ejemplo en una tarjeta que muestre un producto, en ves podemos usar card_product */
 
+.questions {
+  height: 690px;
+  padding: 64px 0;
+
+  display:flex;
+}
+
+.question-orange {
+  border-top: 4px solid orangered;
+}
+
+.question-blue {
+  border-top: 4px solid steelblue;
+}
