@@ -105,6 +105,9 @@ button {
 
 .question-orange {
   border-top: 4px solid orangered;
+  flex-grow:1;
+  flex-shrink: 1;
+  flex-basis: 0%; /*da el tamaño inicial, pero con 0 reparte equitativamente*/
 }
 
 .question-orange > i {
@@ -115,6 +118,9 @@ button {
   border-top: 4px solid steelblue;
   /* lo que hacemos con align-self es hacer que se coloque un elemento por su cuenta de forma verticalß*/
   align-self: flex-end;
+  flex-grow:1;
+  flex-shrink: 1;
+  flex-basis: 0%;
 }
 
 .question-blue > i {
