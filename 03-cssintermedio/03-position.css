@@ -1,0 +1,38 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.contenedor {
+  border:2px solid blue;
+  background-color: lightblue;
+  height:900px;
+}
+
+.caja {
+  border:2px solid black;
+  width:100px;
+  height:100px;
+  font-size:24px;
+}
+
+.caja1 {
+  background-color: aqua;
+}
+
+.caja2 {
+  background-color: goldenrod;
+}
+
+.caja3 {
+  background-color: coral;
+}
+
+.caja4 {
+  background-color: blue;
+}
+
+.caja5 {
+  background-color: greenyellow;
+}
