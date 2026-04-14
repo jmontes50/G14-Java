@@ -10,14 +10,19 @@
   /* grid */
   display: grid;
   gap:10px;
+  /* GRID EXPLÍCITO */
   /* grid-template-columns: 200px 200px 200px; */
   /* 1fr, es un free space, toma el espacio libre */
   /* grid-template-columns: 1fr 1fr 1fr 1fr; */
   /* grid-template-columns: repeat(5, 150px); */
-  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, minmax(200px,250px));
   /* 1fr - free space */
   grid-template-rows: 150px 150px 150px 150px;
   /* grid-template-rows: repeat(4, minmax(150px, 1fr)); */
+  /* GRID IMPLÍCITO */
+  grid-auto-columns: repeat(3, 150px);
+  grid-auto-rows:  120px 120px 120px 120px;
+  grid-auto-flow: row;
 }
 
 .item {
@@ -27,7 +32,7 @@
 .item1 {
   background-color: cyan;
   grid-column: 1 / 3;
-  grid-row: 1 / 4;
+  grid-row: 1 / 3;
 }
 
 .item6 {
