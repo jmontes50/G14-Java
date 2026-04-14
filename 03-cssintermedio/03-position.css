@@ -8,6 +8,8 @@
   border:2px solid blue;
   background-color: lightblue;
   height:900px;
+  margin:50px;
+  position:relative; /*servira de referencia a un absolute*/
 }
 
 .caja {
@@ -23,6 +25,11 @@
 
 .caja2 {
   background-color: goldenrod;
+  position: absolute;
+  top: 100px;
+  /* left:100px; */
+  right: 50px;
+  /* si no encuentra un elemento superior con relative toma en cuenta el navegador en su posicionamiento, de no ser asi se acomoda en base al position relative */
 }
 
 .caja3 {
