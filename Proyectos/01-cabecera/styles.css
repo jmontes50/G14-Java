@@ -46,7 +46,11 @@ button {
 }
 
 ul {
-  list-style: none;
+  list-style: none; /* remueve las viñetas de un ul */
+}
+
+a {
+  text-decoration: none; /* removemos el subrayado de los hipervinculos */
 }
 
 /* 2. utilidades/clases generales */
@@ -66,10 +70,16 @@ ul {
   align-items: center;
 }
 
+.logo {
+  font-weight: bold;
+  font-size:28px;
+}
+
 .links {
   display: flex;
   gap:20px;
   align-items: center;
+  font-family: 'Alata', sans-serif;
 }
 
 .header-title {
