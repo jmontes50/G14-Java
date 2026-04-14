@@ -120,6 +120,10 @@ a {
   color: white;
 }
 
+.btn-sm {
+  padding: 15px 20px;
+}
+
 /*es muy diferente poner por ejemplo una clase que se llame .box o .cajita, donde esa clase se use por ejemplo en una tarjeta que muestre un producto, en ves podemos usar card_product */
 
 .questions {
