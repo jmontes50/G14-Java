@@ -88,12 +88,29 @@ button {
   padding: 64px 0;
 
   display:flex;
+  gap: 56px;
 }
 
 .question-orange {
   border-top: 4px solid orangered;
 }
 
+.question-orange > i {
+  color: orangered;
+}
+
 .question-blue {
   border-top: 4px solid steelblue;
+}
+
+.question-blue > i {
+  color: steelblue;
+}
+
+.questions i {
+  margin: 24px 0 32px 0;
+}
+
+.questions h2 {
+  text-align: left;
 }
