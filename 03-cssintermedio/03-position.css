@@ -8,7 +8,7 @@
   border:2px solid blue;
   background-color: lightblue;
   height:900px;
-  margin:50px;
+  margin:90px;
   position:relative; /*servira de referencia a un absolute*/
 }
 
@@ -34,10 +34,17 @@
 
 .caja3 {
   background-color: coral;
+  /* se va pegando a la parte superior al desplazarse, sin romper la estructura */
+  position: sticky;
+  top: 50px;
 }
 
 .caja4 {
   background-color: blue;
+  /* se va a colocar tomando de referencia la ventana del navegador */
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
 }
 
 .caja5 {
