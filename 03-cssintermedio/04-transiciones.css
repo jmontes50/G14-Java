@@ -1,0 +1,19 @@
+.elemento {
+  width: 300px;
+  height: 200px;
+  border:2px solid red;
+  background-color: coral;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  transition-property: all;
+  transition-duration: 300ms;
+  /* transition-timing-function: ease-in-out; */
+  transition-timing-function: cubic-bezier(1,.02,0,1.01);
+}
+
+.elemento:hover {
+  height: 300px;
+  border-radius: 50%;
+
+}
