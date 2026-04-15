@@ -1,0 +1,13 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.esfera {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: turquoise;
+}
