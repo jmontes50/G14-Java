@@ -27,9 +27,11 @@
   background-color: goldenrod;
   position: absolute;
   top: 100px;
-  /* left:100px; */
-  right: 50px;
+  left:50px;
+  /* right: 50px; */
   /* si no encuentra un elemento superior con relative toma en cuenta el navegador en su posicionamiento, de no ser asi se acomoda en base al position relative */
+
+  z-index:29;
 }
 
 .caja3 {
@@ -37,6 +39,9 @@
   /* se va pegando a la parte superior al desplazarse, sin romper la estructura */
   position: sticky;
   top: 50px;
+
+
+  z-index:19;
 }
 
 .caja4 {
