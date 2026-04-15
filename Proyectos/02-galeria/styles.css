@@ -73,3 +73,20 @@
   grid-column: 3 / 5;
   grid-row: 4 / 5
 }
+
+@keyframes entrada {
+  0% {
+    /* el elemento no se va a ver */
+    transform: scale(0);
+  }
+
+  70% {
+    /* aquí se verá un poquito mas grande */
+    transform: scale(1.05);
+  }
+
+  100% {
+    /* se ve normal en su escala */
+    transform: scale(1);
+  }
+}
