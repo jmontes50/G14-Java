@@ -23,6 +23,8 @@
   position: relative;
   filter: blur(1px) sepia(0.4); /*desenfoque 1px*/
   transition-duration: 300ms;
+  animation-name: entrada;
+  animation-duration: 400ms;
 }
 
 .card:hover {
