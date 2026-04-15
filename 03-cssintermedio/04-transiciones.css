@@ -25,4 +25,10 @@ p {
   padding:20px;
   font-size: 20px;
   transform: translate(100px, 50px) scale(1.2) rotate(45deg);
+  /* etapas
+  1. va leer todo el html, css, js
+  2. va a dibujar el html
+  3. va a aplicar estilos comunes de css
+  4. va aplicar transformaciones, transiciones, animaciones
+  */
 }
