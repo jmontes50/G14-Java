@@ -169,13 +169,25 @@ a {
 /* 4. Media Queries */
 
 @media (width <= 992px) {
+  /* html {
+    font-size: 10px;
+  } */
+
   .questions {
     flex-direction: column;
     padding:20px;
     margin-bottom:30px;
+    /* font-size:20px; */
+    font-size: 1.25rem;
   }
 
   .question-blue, .question-blue h2 {
     text-align: right;
+  }
+
+  .questions h2 {
+    font-size: 2.5em;
+    /* font-size:50px; */
+    /* font-size: 40px; */
   }
 }
