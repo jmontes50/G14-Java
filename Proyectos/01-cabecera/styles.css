@@ -80,6 +80,8 @@ a {
   gap:20px;
   align-items: center;
   font-family: 'Alata', sans-serif;
+  transition-duration: 300ms;
+  transition-property: all;
 }
 /* elementos para menu */
 .open-menu, .close-menu {
