@@ -81,6 +81,16 @@ a {
   align-items: center;
   font-family: 'Alata', sans-serif;
 }
+/* elementos para menu */
+.open-menu, .close-menu {
+  display: none;
+}
+
+#checkbox-menu {
+  visibility: hidden;
+}
+
+/* --header-- */
 
 .header-title {
   font-size: 72px;
@@ -173,6 +183,29 @@ a {
     font-size: 10px;
   } */
 
+  /* navbar */
+
+  .open-menu, .close-menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .links {
+    background-color: orange;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 20px;
+    padding: 40px;
+    /* vh (viewport height) y vw (viewport width) van a ser unidades porcentuales que van a tomar el 100 del tamaño del viewport */
+    height: 100vh;
+    width: 100vw;
+    /* posición */
+
+
+  }
+
+  /* header */
+
   header {
     padding: 30px;
     margin-bottom:20px;
@@ -187,6 +220,8 @@ a {
     /* line-height cambia la separacion entre lineas de texto */
     line-height: 1.5rem;
   }
+
+  /* section questions */
 
   .questions {
     flex-direction: column;
