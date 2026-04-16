@@ -18,6 +18,21 @@ p {
   color:blue;
 }
 
+.contenedor {
+  border:2px solid green;
+  padding:10px;
+  display: grid;
+  gap:20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  max-width: 900px;
+  margin:0 auto;
+}
+
+.item {
+  font-size: 32px;
+  border:1px solid blue;
+}
+
 @media screen and (width >= 1024px) {
   h1 {
     color:purple;
@@ -38,5 +53,9 @@ p {
 
   p {
     color: green;
+  }
+
+  .item {
+    font-size: 20px;
   }
 }
