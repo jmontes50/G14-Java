@@ -184,6 +184,9 @@ a {
   } */
 
   /* navbar */
+  .navbar {
+    padding:42px 20px;
+  }
 
   .open-menu, .close-menu {
     display: block;
@@ -193,15 +196,17 @@ a {
   .links {
     background-color: orange;
     flex-direction: column;
-    gap: 40px;
+    align-items: flex-end;
+    gap: 50px;
     font-size: 20px;
     padding: 40px;
     /* vh (viewport height) y vw (viewport width) van a ser unidades porcentuales que van a tomar el 100 del tamaño del viewport */
     height: 100vh;
-    width: 100vw;
+    width: 80vw;
     /* posición */
-
-
+    position: fixed;
+    top:0;
+    right: -80vw;
   }
 
   /* header */
