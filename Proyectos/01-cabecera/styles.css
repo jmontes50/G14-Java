@@ -165,3 +165,17 @@ a {
 .questions h2 {
   text-align: left;
 }
+
+/* 4. Media Queries */
+
+@media (width <= 992px) {
+  .questions {
+    flex-direction: column;
+    padding:20px;
+    margin-bottom:30px;
+  }
+
+  .question-blue, .question-blue h2 {
+    text-align: right;
+  }
+}
