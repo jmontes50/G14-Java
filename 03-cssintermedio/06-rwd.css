@@ -17,3 +17,26 @@ p {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color:blue;
 }
+
+@media screen and (width >= 1024px) {
+  h1 {
+    color:purple;
+    font-size: 28px;
+  }
+
+  p {
+    text-decoration: underline;
+  }
+}
+
+
+@media (width <= 500px) {
+  h1 {
+    color:orangered;
+    font-size: 40px;
+  }
+
+  p {
+    color: green;
+  }
+}
