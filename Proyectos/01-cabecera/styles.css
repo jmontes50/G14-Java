@@ -1,3 +1,8 @@
+:root {
+  /* sirve para poner variables */
+  --color-principal: hsl(36, 80%, 60%);
+}
+
 /* reset */
 
 * {
@@ -201,7 +206,12 @@ a {
     /* hexadecimal, 3 pares, 0 a F, RRGGBB */
     /* background-color: #00FFFF; */
     /* RGBA, van en números del 0 al 255 mas el alpha */
-    background-color: rgba(0,255,255, 0.9);
+    /* background-color: rgba(0,255,255, 0.9); */
+    /* HSL, Matiz, Saturación, Luminosidad */
+    /* background-color: hsl(180, 50%, 40% ); */
+    /* variable */
+    background-color: var(--color-principal);
+
     flex-direction: column;
     align-items: flex-end;
     gap: 50px;
