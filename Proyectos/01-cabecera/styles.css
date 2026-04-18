@@ -217,7 +217,7 @@ a {
     align-items: flex-end;
     gap: 50px;
     font-size: 20px;
-    padding: 40px;
+    padding: 40px 20px;
     /* vh (viewport height) y vw (viewport width) van a ser unidades porcentuales que van a tomar el 100 del tamaño del viewport */
     height: 100vh;
     width: 80vw;
