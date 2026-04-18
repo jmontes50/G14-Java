@@ -196,7 +196,12 @@ a {
   }
 
   .links {
-    background-color: orange;
+    /* Colores */
+    /* background-color: orange; */
+    /* hexadecimal, 3 pares, 0 a F, RRGGBB */
+    /* background-color: #00FFFF; */
+    /* RGBA, van en números del 0 al 255 mas el alpha */
+    background-color: rgba(0,255,255, 0.9);
     flex-direction: column;
     align-items: flex-end;
     gap: 50px;
