@@ -18,3 +18,25 @@ let resultado = sumar(5, 3); //para ejecutar una función con argumentos se escr
 
 console.log(resultado);
 
+//Ciudadano de primera clase
+//Una función se puede asignar a uuna variable, se puede pasar como argumento a otra función, se puede devolver desde otra función, etc.
+
+let restar = function (a, b) { //esto es una función anónima, no tiene un nombre, se asigna a la variable restar
+    return a - b;
+}
+
+console.log(restar(10, 4)); //para ejecutar la función restar se escribe su nombre seguido de paréntesis y dentro de los paréntesis se escriben los argumentos separados por comas
+
+//funciones flecha
+
+//function multiplicar(a, b) {
+//    return a * b;
+//}
+let multiplicar = (a, b) => {
+    return a * b;
+}
+
+console.log(multiplicar(6, 7));
+
+
+
