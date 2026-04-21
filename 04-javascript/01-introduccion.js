@@ -44,11 +44,11 @@ console.log(parseFloat(nota2)); //esto también es una forma de parsear, el resu
 let texto = "Hola!";
 console.log("isNotANumber resultado:",isNaN(texto)); //isNaN() es una función que devuelve true si el valor no es un número, en este caso devuelve true porque "Hola!" no es un número
 
-//Expresiones
+//Expresiones -> una expresión es cualquier fragmento de código que se evalúa y produce un valor, por ejemplo:
 texto
 10 + 20
 isNaN("25")
 
-//Sentencia
+//Sentencia - Ordenes
 texto = "Moin";
 console.log("Hola mundo!"); //esto es una sentencia, es una instrucción que el programa ejecuta, una sentencia puede contener una o varias expresiones, en este caso la expresión es "Hola mundo!" y la sentencia es console.log("Hola mundo!");
