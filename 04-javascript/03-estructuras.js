@@ -99,4 +99,5 @@ let dias = {
     miércoles: "Hoy es miércoles!!"
 }
 
+//usando bracket notation
 console.log(dias[dia] || "No es un día válido"); //esto es una forma de simular un switch usando un objeto, si dias[dia] no existe, devuelve "No es un día válido"
