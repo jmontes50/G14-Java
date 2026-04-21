@@ -32,11 +32,30 @@ console.log(restar(10, 4)); //para ejecutar la función restar se escribe su nom
 //function multiplicar(a, b) {
 //    return a * b;
 //}
-let multiplicar = (a, b) => {
-    return a * b;
-}
+// let multiplicar = (a, b) => {
+//     return a * b;
+// }
+let multiplicar = (a, b) => a * b; //cuando la función tiene una sola expresión se puede omitir el return y las llaves, el resultado de la expresión se devuelve automáticamente
 
 console.log(multiplicar(6, 7));
 
+let saludarUsuario = nombre => `Hola, ${nombre}!`; //cuando la función tiene un solo parámetro se pueden omitir los paréntesis
 
+console.log(saludarUsuario("María"));
+
+//diferencias con 'this' en funciones normales y funciones flecha
+
+let persona = {
+    nombre: "Carlos",
+    edad: 25,
+    //método
+    saludar: function(){
+        console.log(`Hola, mi nombre es ${this.nombre}`);
+    }
+    // saludar: () => {
+    //     console.log(`Hola, mi nombre es ${this.nombre}`);
+    // }
+};
+
+persona.saludar();
 
