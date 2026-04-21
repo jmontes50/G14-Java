@@ -12,3 +12,30 @@ console.table(frutas); //console.table() es una función que muestra los datos e
 
 let arrMultiple = [1, "hola", true, null, undefined, [1, 2, 3]]; //un array puede contener cualquier tipo de dato, incluso otros arrays o objetos
 console.table(arrMultiple);
+
+//objetos
+let persona = {
+    //key: value
+    //propiedad: valor,
+    nombre: "Juan",
+    edad: 30,
+    esEstudiante: true,
+    hobbies: ["leer", "programar", "correr"],
+    //los nombres de las propiedades pueden contener símbolos
+    "correo-corporativo": "juan@empresa.com"
+}
+console.table(persona);
+
+//como acceder a las propiedades de un objeto
+//dot notation
+console.log(persona.nombre);
+console.log(persona.edad);
+// console.log(persona.correo-corporativo); //error*
+
+//bracket notation
+console.log(persona["esEstudiante"]);
+console.log(persona["hobbies"]);
+console.log(persona["correo-corporativo"]); //esto si funciona*
+
+let nombrepropiedad = "nombre";
+console.log(persona[nombrepropiedad]);
