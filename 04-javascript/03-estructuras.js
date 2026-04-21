@@ -22,6 +22,7 @@ if (total < 50) {
 
 //estrictamente igual
 //prompt obtiene una entrada del usuario, prompt siempre da un string
+/*
 let ticketLoteria = prompt("Ingresa el número de tu ticket de lotería");
 
 console.log("El número de tu ticket es:", ticketLoteria);
@@ -34,4 +35,29 @@ if (numberTicket === 12345) {
     console.log("¡Felicidades! Has ganado el premio mayor");
 } else {
     console.log("Lo siento, tu ticket no ha ganado");
+}
+    */
+
+//falsy values: false, 0, "", null, undefined, NaN
+//truthy values: todos los demás valores que no son falsy
+
+let nulo = null;
+
+if (nulo) {
+    console.log("Esto no se ejecuta porque nulo es un valor falsy");
+} else {
+    console.log("Esto se ejecuta porque nulo es un valor falsy");
+}
+
+let gato = {
+    nombre: "Michi",
+    edad: 3
+}
+
+console.log(gato.registro);
+
+if (gato.registro) { //falsy porque gato.registro no existe, es undefined
+    console.log("El gato tiene registro");
+} else {
+    console.log("El gato no tiene registro");
 }
