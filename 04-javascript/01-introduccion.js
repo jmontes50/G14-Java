@@ -21,3 +21,25 @@ console.log(typeof hacefrio);
 let noDefinido;
 
 console.log(typeof noDefinido);
+//En JS existen 6 tipos de datos primitivos: string, number, boolean,, undefined, symbol y bigint
+
+let esNulo = null;
+
+console.log(esNulo);
+console.log(typeof esNulo); //esto es un error en JS, el tipo de dato de null es object, pero en realidad no es un objeto, es un valor primitivo que representa la ausencia de valor
+
+//es el problema de concatenar
+let nota = 20;
+let nota2 = "10";
+
+console.log(nota + nota2); //esto no es una suma, es una concatenacion, el resultado es "2010", se usa el símbolo + para concatenar
+
+//para convertir tenemos que parsear el string a number, Number() parse
+
+//Number lo pueden ver como un método estático
+console.log(nota + Number(nota2)); //esto si es una suma, el resultado es 30
+
+console.log(parseFloat(nota2)); //esto también es una forma de parsear, el resultado es 10, parseInt() parsea un string a un número entero, parseFloat() parsea un string a un número decimal
+
+let texto = "Hola!";
+console.log("isNotANumber resultado:",isNaN(texto)); //isNaN() es una función que devuelve true si el valor no es un número, en este caso devuelve true porque "Hola!" no es un número
