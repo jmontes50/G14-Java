@@ -40,6 +40,7 @@ if (numberTicket === 12345) {
 
 //falsy values: false, 0, "", null, undefined, NaN
 //truthy values: todos los demás valores que no son falsy
+/*
 
 let nulo = null;
 
@@ -61,3 +62,15 @@ if (gato.registro) { //falsy porque gato.registro no existe, es undefined
 } else {
     console.log("El gato no tiene registro");
 }
+
+*/
+
+//operadores ternarios
+
+let usuario = "supervisor";
+
+//condición ? si es true : si es false
+
+let mensaje = (usuario === "admin") ? "Bienvenido, admin" : "Bienvenido, usuario";
+
+console.log(mensaje);
