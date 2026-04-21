@@ -92,3 +92,11 @@ switch (dia) {
     default:
         console.log("No es un día válido");
 }
+
+let dias = {
+    lunes: "Hoy es lunes!!",
+    martes: "Hoy es martes!!",
+    miércoles: "Hoy es miércoles!!"
+}
+
+console.log(dias[dia] || "No es un día válido"); //esto es una forma de simular un switch usando un objeto, si dias[dia] no existe, devuelve "No es un día válido"
