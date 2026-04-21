@@ -52,3 +52,22 @@ isNaN("25")
 //Sentencia - Ordenes
 texto = "Moin";
 console.log("Hola mundo!"); //esto es una sentencia, es una instrucción que el programa ejecuta, una sentencia puede contener una o varias expresiones, en este caso la expresión es "Hola mundo!" y la sentencia es console.log("Hola mundo!");
+
+//Para concatenar, template literals ó template strings, se usan las comillas invertidas ``, dentro de las cuales se pueden insertar expresiones usando ${}, por ejemplo:
+let nombre = "Juan";
+console.log(`Hola ${nombre}!`);
+console.log(`esto es
+  un
+  poema
+  con
+  saltos de
+  línea ${nombre}
+  otro texto
+  ${10 + 20}
+  `);
+
+const PI = 3.1416; //constante, no se puede reasignar, se recomienda usar const para variables que no van a cambiar su valor, y let para variables que si van a cambiar su valor
+
+// PI = 42; //esto da error
+
+console.log(PI);
