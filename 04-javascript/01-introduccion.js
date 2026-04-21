@@ -71,3 +71,28 @@ const PI = 3.1416; //constante, no se puede reasignar, se recomienda usar const 
 // PI = 42; //esto da error
 
 console.log(PI);
+
+//operacion aritmeticas
+let a = 10;
+let b = 3;
+
+//El console.log puede recibir varios argumentos
+console.log("Suma:", a + b);
+console.log("Resta:", a - b);
+console.log("Multiplicación:", a * b);
+console.log("División:", a / b);
+console.log("Módulo/Residuo:", a % b); //el módulo es el resto de la división, en este caso el resultado es 1 porque 10 dividido entre 3 da 3 con un resto de 1
+
+//operadores aritmeticos de asignación
+let c = 5;
+c++; //esto es lo mismo que c = c + 1, el resultado es 6
+console.log("c después de c++:", c);
+c += 2; //esto es lo mismo que c = c + 2, el resultado es 7
+console.log("c después de c += 2:", c);
+c -= 3; //esto es lo mismo que c = c - 3, el resultado es 4
+console.log("c después de c -= 3:", c);
+c *= 4; //esto es lo mismo que c = c * 4, el resultado es 16
+console.log("c después de c *= 4:", c);
+c /= 2; //esto es lo mismo que c = c / 2, el resultado es 8
+console.log("c después de c /= 2:", c);
+c %= 3;
