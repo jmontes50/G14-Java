@@ -39,3 +39,28 @@ console.log(persona["correo-corporativo"]); //esto si funciona*
 
 let nombrepropiedad = "nombre";
 console.log(persona[nombrepropiedad]);
+
+//explorando métodos de arrays
+let vegetales = ["lechuga", "tomate", "zanahoria"];
+
+console.log("length/longitud",vegetales.length); //length es una propiedad que devuelve la cantidad de elementos que tiene el array
+
+vegetales.push("pepino"); //push es un método que agrega un elemento al final del array
+
+console.table(vegetales);
+
+// Curiosidades en tipos de datos
+let nuevoTexto = new String("Hola!"); //esto es un objeto de tipo String, no es un string primitivo, es un objeto que envuelve un string primitivo
+let otroTexto = "Buenas Noches!";
+
+console.log(nuevoTexto);
+console.log(typeof nuevoTexto); //el tipo de dato de nuevoTexto es object, no string, porque es un objeto que envuelve un string primitivo
+console.log(nuevoTexto.toUpperCase());
+console.log(otroTexto.toUpperCase());
+
+let nuevoArreglo = new Array(1, 2, 3); //esto es un objeto de tipo Array, no es un array primitivo, es un objeto que envuelve un array primitivo
+
+console.log(nuevoArreglo);
+console.log(typeof nuevoArreglo); //el tipo de dato de nuevoArreglo es object, no array, porque es un objeto que envuelve un array primitivo
+nuevoArreglo.push(4);
+console.table(nuevoArreglo);
