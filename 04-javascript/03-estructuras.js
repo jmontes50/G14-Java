@@ -65,7 +65,7 @@ if (gato.registro) { //falsy porque gato.registro no existe, es undefined
 
 */
 
-//operadores ternarios
+//operadores ternarios, es una expresion corta de una estructura condicional if-else, se escribe en una sola línea.
 
 let usuario = "supervisor";
 
@@ -74,3 +74,21 @@ let usuario = "supervisor";
 let mensaje = (usuario === "admin") ? "Bienvenido, admin" : "Bienvenido, usuario";
 
 console.log(mensaje);
+
+//Switch
+
+let dia = "lunes";
+
+switch (dia) {
+    case "lunes":
+        console.log("Hoy es lunes");
+        break;
+    case "martes":
+        console.log("Hoy es martes");
+        break;
+    case "miércoles":
+        console.log("Hoy es miércoles");
+        break;
+    default:
+        console.log("No es un día válido");
+}
