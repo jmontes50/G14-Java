@@ -77,3 +77,13 @@ const planDeGobierno3 = { ...planDeGobierno1, propuesta2: "Reducir impuestos", g
 console.log({ planDeGobierno3 });
 
 console.log({ planDeGobierno1 });
+
+let productos = ["Audifonos", "Teclado", "Mouse"];
+
+let accesorios = ["Mousepad", "Parlantes"];
+
+let productos2 = [...productos, "Monitor", ...accesorios, "Webcam"];
+
+console.log({ productos });
+
+console.log({ productos2 });
