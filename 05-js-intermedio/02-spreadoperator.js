@@ -70,3 +70,10 @@ let sueldo2 = sueldo;
 sueldo2 += 1000;
 
 console.log(sueldo)
+
+//Spread operator, nos permite crear una copia real de un objeto o arreglo, sin que ambas variables apunten a la misma dirección en memoria
+const planDeGobierno3 = { ...planDeGobierno1, propuesta2: "Reducir impuestos", gastoSeguridad: 0.3 };
+
+console.log({ planDeGobierno3 });
+
+console.log({ planDeGobierno1 });
