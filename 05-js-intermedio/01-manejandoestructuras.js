@@ -64,6 +64,17 @@ const dataEstudiante = {
 }
 const estudiante1 = crearEstudiante(dataEstudiante);
 
-console.log(estudianteAsig)
-
 console.table(estudiante1);
+
+let isLoggedIn = false;
+
+// console.log("isLoggedIn:", isLoggedIn); // false
+console.log({ isLoggedIn }); // { isLoggedIn: isLoggedIn }
+
+let user = {
+  nombresYApellidos: "John Doe",
+}
+
+let { nombresYApellidos: nombres } = user;
+
+console.log(nombres); // John Doe
