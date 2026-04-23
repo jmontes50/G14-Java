@@ -36,3 +36,26 @@ console.log(productos);
 const texto = new String("Hola mundo");
 
 console.log(texto);
+
+//2. map transforma un arreglo y retorna un nuevo arreglo transformado
+//acceder al item, al índice y al arreglo original es algo común de los metodos de arreglos, por eso se pasan como parámetros.
+let productosOferta = productos.map((prod, i, arr) => {
+  return {
+    ...prod,
+    posicion: i,
+    arregloOriginal: arr,
+    precio: prod.precio * 0.8, //aplicamos un descuento del 20%
+  }
+})
+
+console.log("Productos en oferta:");
+console.table(productosOferta);
+
+//3. filter filtra un arreglo y retorna un nuevo arreglo con los elementos que cumplen una condición
+// let productosCaros = productos.filter((prod) => prod.precio > 400);
+let productosCaros = productos.filter((prod) => {
+  return prod.precio > 400;
+});
+
+console.log("Productos caros:");
+console.table(productosCaros);
