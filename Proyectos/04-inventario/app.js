@@ -18,9 +18,26 @@ const verTotalInventario = () => {
   return `El valor total del inventario es: $${total}`;
 };
 
+const agregarProducto = (nombre, precio, cantidad) => {
+  const nuevoProducto = {
+    id: productos.length + 1,
+    nombre: nombre,
+    precio: precio,
+    cantidad: cantidad
+  };
+  productos.push(nuevoProducto);
+};
+
 const opciones = {
   1: mostrarInventario,
-  2: verTotalInventario
+  2: verTotalInventario,
+  3: () => {
+    const nombre = prompt("Ingrese el nombre del producto:");
+    const precio = parseFloat(prompt("Ingrese el precio del producto:"));
+    const cantidad = parseInt(prompt("Ingrese la cantidad del producto:"));
+    agregarProducto(nombre, precio, cantidad);
+    return "Producto agregado exitosamente.";
+  }
 }
 
 const menu = () => {
@@ -31,6 +48,7 @@ const menu = () => {
       Seleccione una opción:
         1. Mostrar Inventario
         2. Ver Total del Inventario
+        3. Agregar Producto
         0: Salir
     `);
     console.log(opcion)
