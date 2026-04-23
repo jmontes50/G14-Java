@@ -80,11 +80,18 @@ console.log("Índice del producto encontrado:", indiceProducto);
 //   return a.precio - b.precio; //orden ascendente por precio
 // });
 let ordenado = productos.toSorted((a, b) => {
-  return a.precio - b.precio; //orden ascendente por precio
+  return b.precio - a.precio; //orden descendente por precio
+});
+
+let ordenadoNombre = productos.toSorted((a, b) => {
+  return a.nombre.localeCompare(b.nombre); //orden ascendente por nombre
 });
 
 console.log("Productos ordenados por precio:");
 console.table(ordenado);
+
+console.log("Productos ordenados por nombre:");
+console.table(ordenadoNombre);
 
 console.log("Productos originales:");
 console.table(productos);
