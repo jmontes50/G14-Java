@@ -59,3 +59,18 @@ let productosCaros = productos.filter((prod) => {
 
 console.log("Productos caros:");
 console.table(productosCaros);
+
+//find encuentra el primer elemento que cumple una condición y lo retorna, si no encuentra nada retorna undefined
+let encontrarProducto = productos.find((prod) => {
+  return prod.id === 2;
+});
+
+console.log("Producto encontrado:");
+console.table(encontrarProducto);
+
+//findIndex encuentra el índice del primer elemento que cumple una condición y lo retorna, si no encuentra nada retorna -1
+let indiceProducto = productos.findIndex((prod) => {
+  return prod.id === 10;
+});
+
+console.log("Índice del producto encontrado:", indiceProducto);
