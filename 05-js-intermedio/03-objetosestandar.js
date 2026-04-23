@@ -95,3 +95,19 @@ console.table(ordenadoNombre);
 
 console.log("Productos originales:");
 console.table(productos);
+
+const edades = [25, 30, 18, 22, 35];
+
+//reduce acumula un valor a partir de un arreglo, el primer parámetro es una función que recibe el acumulador y el valor actual, y el segundo parámetro es el valor inicial del acumulador
+const totalEdades = edades.reduce((total, edad) => {
+  return total + edad;
+});
+
+console.log("Total de edades:", totalEdades);
+
+const totalInventario = productos.reduce((total, prod) => {
+  // console.log("flag:", total, prod.precio);
+  return total + prod.precio;
+}, 0); //el valor inicial del acumulador es 0, si no se pone, el primer valor del arreglo se toma como valor inicial y el acumulador empieza desde el segundo elemento, lo cual puede causar errores si el arreglo está vacío o si el primer elemento no es del mismo tipo que el valor que queremos acumular. Por eso es recomendable siempre poner un valor inicial para evitar estos problemas.
+
+console.log("Total del inventario:", totalInventario);
