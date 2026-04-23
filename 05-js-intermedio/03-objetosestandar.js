@@ -70,7 +70,21 @@ console.table(encontrarProducto);
 
 //findIndex encuentra el índice del primer elemento que cumple una condición y lo retorna, si no encuentra nada retorna -1
 let indiceProducto = productos.findIndex((prod) => {
-  return prod.id === 10;
+  return prod.id === 2;
 });
 
 console.log("Índice del producto encontrado:", indiceProducto);
+
+//el problema de sort es que modifica el arr original
+// let ordenado = productos.sort((a, b) => {
+//   return a.precio - b.precio; //orden ascendente por precio
+// });
+let ordenado = productos.toSorted((a, b) => {
+  return a.precio - b.precio; //orden ascendente por precio
+});
+
+console.log("Productos ordenados por precio:");
+console.table(ordenado);
+
+console.log("Productos originales:");
+console.table(productos);
