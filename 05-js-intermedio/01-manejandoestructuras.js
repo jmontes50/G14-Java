@@ -75,6 +75,7 @@ let user = {
   nombresYApellidos: "John Doe",
 }
 
+//alias, renombrar la variable al momento de desestructurar
 let { nombresYApellidos: nombres } = user;
 
 console.log(nombres); // John Doe
