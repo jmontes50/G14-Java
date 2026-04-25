@@ -8,5 +8,31 @@ window.navigator.geolocation.getCurrentPosition((resultado) => {
 //document representa todo el document HTML
 console.log(document);
 
+const colorAleatorio = () => {
+  //rgba
+  //random da un valor entre 0 y 1
+  color1 = Math.floor(Math.random() * 254) + 1
+  color2 = Math.floor(Math.random() * 254) + 1
+  color3 = Math.floor(Math.random() * 254) + 1
+
+  const colorRGB = `rgb(${color1}, ${color2}, ${color3})`
+  return colorRGB;
+}
+
 
 const Body = document.querySelector('body');
+
+// console.log(Body);
+//querySelector que funciona de forma idéntica a un selector de css
+//si es una etiqueta se llama tal cual, si es una clase se usa . y si es una id #
+const header = document.querySelector("header");
+console.log(header);
+//JS si es una propiedad de css con - conviertele a camelCase
+//background-color -> backgroundColor
+//los valores que indicamos son strings
+header.style.backgroundColor = colorAleatorio();
+
+const h1 = document.querySelector("h1");
+h1.style.color = "white"
+h1.style.fontSize = "48px";
+
