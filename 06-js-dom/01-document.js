@@ -77,11 +77,25 @@ const inputCorreo = document.getElementById("correo");
 // const btnSuscripcion = document.querySelector("#btn-suscripcion");
 const btnSuscripcion = document.getElementById("btn-suscripcion");
 
+const sectionVacio = document.querySelector("#vacio");
+
+let correos = [];
+
 console.log({ inputCorreo });
 console.log({ btnSuscripcion });
 
 btnSuscripcion.addEventListener("click", () => {
+  const nuevoEmail = inputCorreo.value;
+  correos.push(nuevoEmail);
   alert("Te has suscrito!");
+  console.table(correos);
+  inputCorreo.value = "";
+
+ const correosParagraphs = correos.map((correo) => `<p>${correo}</p>`);
+ console.log({ correosParagraphs });
+ const htmlCorreosParagraphs = correosParagraphs.join("");
+ console.log({ htmlCorreosParagraphs });
+ sectionVacio.innerHTML = htmlCorreosParagraphs;
 })
 
 inputCorreo.addEventListener("change", (evento) => {
@@ -102,3 +116,5 @@ setInterval(() => {
   //toggle si existe la clase la remueve, si no esta la agrega
   sectionSuscripcion.classList.toggle("borde-rojo");
 }, 1000)
+
+
