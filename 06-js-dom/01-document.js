@@ -71,3 +71,21 @@ articlesSelector.forEach((article, index) => {
   console.log(index, article);
   article.style.border = "4px solid purple";
 })
+
+//getElementById,
+const inputCorreo = document.getElementById("correo");
+// const btnSuscripcion = document.querySelector("#btn-suscripcion");
+const btnSuscripcion = document.getElementById("btn-suscripcion");
+
+console.log({ inputCorreo });
+console.log({ btnSuscripcion });
+
+btnSuscripcion.addEventListener("click", () => {
+  alert("Te has suscrito!");
+})
+
+inputCorreo.addEventListener("change", (evento) => {
+  console.log("Se esta escribiendo")
+  //A partir del objeto del evento, podemos encontrar el target, el target (objetivo) es la referencia de donde se ha disparado el evento
+  console.log({ evento: evento.target.value })
+})
