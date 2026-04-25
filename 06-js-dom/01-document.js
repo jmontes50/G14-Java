@@ -89,3 +89,16 @@ inputCorreo.addEventListener("change", (evento) => {
   //A partir del objeto del evento, podemos encontrar el target, el target (objetivo) es la referencia de donde se ha disparado el evento
   console.log({ evento: evento.target.value })
 })
+
+const sectionSuscripcion = document.querySelector(".suscripcion");
+
+sectionSuscripcion.classList.add("borde-rojo");
+
+sectionSuscripcion.classList.add("fondo-oro");
+
+// sectionSuscripcion.classList.remove("borde-rojo");
+//setInterval, ejecuta algo cada X milisegundos
+setInterval(() => {
+  //toggle si existe la clase la remueve, si no esta la agrega
+  sectionSuscripcion.classList.toggle("borde-rojo");
+}, 1000)
