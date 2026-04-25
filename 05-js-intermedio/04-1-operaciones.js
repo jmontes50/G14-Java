@@ -1,6 +1,9 @@
 const queFechaEsHoy = () => {
     const hoy = new Date();
     const hoyString = hoy.toLocaleDateString();
+
+    const mes = hoy.getMonth() + 1; // Los meses en JavaScript van de 0 a 11, por eso sumamos 1
+
     return hoyString;
 }
 
