@@ -56,6 +56,7 @@ const menu = () => {
     if (opcion === "0") { //cerramos el programa
       continuar = false;
     } else if (opciones[opcion]) { //truthy si la opción existe en el objeto opciones
+      //el parentesis es para ejecutar la función que se encuentra en el objeto opciones, si no se ponen los parentesis se estaría haciendo referencia a la función pero no se estaría ejecutando
       alert(opciones[opcion]());
     } else {
       alert("Opción no válida, por favor intente de nuevo.");
