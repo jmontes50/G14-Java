@@ -9,4 +9,11 @@ const obtenerNumeroAleatorio = (min, max) => {
     return numeroAleatorio;
 }
 
+const saludar = (nombre) => {
+    return `Hola, ${nombre}! Bienvenido al curso de JavaScript Intermedio.`;
+}
+
+//default -> x defecto, solo puede haber una exportación por default en un módulo
+export default saludar;
+
 export { queFechaEsHoy, obtenerNumeroAleatorio };
