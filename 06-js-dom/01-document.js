@@ -54,3 +54,20 @@ const section1 = document.querySelector(".importante");
 section1.style.border = "2px solid green";
 section1.style.fontSize = "24px";
 section1.style.fontFamily = "Arial";
+
+//getElementsByClassName, te da un HTMLCollection que no es iterable por si solo
+const articlesClassName = document.getElementsByClassName("noticia");
+
+console.log({ articlesClassName });
+
+// articlesClassName.forEach(() => {}); //Array.from() //convierte en Array
+
+//querySelectorAll, te da un nodeList que es iterable con forEach
+const articlesSelector = document.querySelectorAll(".noticia");
+
+console.log({ articlesSelector });
+
+articlesSelector.forEach((article, index) => {
+  console.log(index, article);
+  article.style.border = "4px solid purple";
+})
