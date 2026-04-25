@@ -48,3 +48,9 @@ header.innerHTML = `
   <hr>
   <h2>Contenido dinámico</h2>
 `;
+
+const section1 = document.querySelector(".importante");
+
+section1.style.border = "2px solid green";
+section1.style.fontSize = "24px";
+section1.style.fontFamily = "Arial";
