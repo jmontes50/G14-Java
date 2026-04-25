@@ -85,7 +85,7 @@ console.log({ inputCorreo });
 console.log({ btnSuscripcion });
 
 btnSuscripcion.addEventListener("click", () => {
-  const nuevoEmail = inputCorreo.value;
+  const nuevoEmail = inputCorreo.value; //user1@gmail.com
   correos.push(nuevoEmail);
   alert("Te has suscrito!");
   console.table(correos);
