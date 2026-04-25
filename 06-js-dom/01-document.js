@@ -19,7 +19,6 @@ const colorAleatorio = () => {
   return colorRGB;
 }
 
-
 const Body = document.querySelector('body');
 
 // console.log(Body);
@@ -36,3 +35,16 @@ const h1 = document.querySelector("h1");
 h1.style.color = "white"
 h1.style.fontSize = "48px";
 
+const htmlStringHeader = header.innerHTML;
+
+const contenidoH1 = h1.innerText;
+
+console.log({ htmlStringHeader });
+
+console.log({ contenidoH1 });
+
+header.innerHTML = `
+  <h1>Desde el Javascript</h1>
+  <hr>
+  <h2>Contenido dinámico</h2>
+`;
