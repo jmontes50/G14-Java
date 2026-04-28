@@ -10,6 +10,15 @@ const Card = (titulo, texto) => {
     <button class="btn-card">ver más</button>
   `;
 
+  const btn = divCard.querySelector(".btn-card");
+
+  btn.addEventListener("click", () => {
+    alert(`
+      Este es el producto ${titulo}
+      tiene las siguentes especificaciones
+      ${texto}
+      `)
+  })
 
   return divCard;
 }
