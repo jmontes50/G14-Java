@@ -1,3 +1,5 @@
+import Card from "./02-1-componente.js";
+
 const h1 = document.querySelector("h1");
 
 const link = document.querySelector("a");
@@ -72,3 +74,9 @@ span.innerText = "Soy un span creado con new Element()";
 
 main.appendChild(span);
 */
+
+console.log(Card());
+
+const nuevoCard = Card();
+
+main.appendChild(nuevoCard);
