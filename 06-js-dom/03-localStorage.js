@@ -5,4 +5,5 @@ form.addEventListener("submit", (evento) => {
   //previene el evento por defecto de un elemento ej submit recargandose, hipervnculo abriendo una dirección
   evento.preventDefault();
   console.log("Submit!!!!")
+  console.log("holaaaaa")
 })
