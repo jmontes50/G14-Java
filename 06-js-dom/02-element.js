@@ -75,8 +75,28 @@ span.innerText = "Soy un span creado con new Element()";
 main.appendChild(span);
 */
 
-console.log(Card());
+console.log("revisando card",Card("titulo1","texto1"));
 
-const nuevoCard = Card();
+// const nuevoCard = Card();
 
-main.appendChild(nuevoCard);
+// main.appendChild(nuevoCard);
+
+const arrProductos = [
+  {
+    titulo: "televisor",
+    texto: "lorem ipsum dolor sit amet"
+  },
+  {
+    titulo: "laptop",
+    texto: "lorem ipsum dolor sit amet"
+  },
+  {
+    titulo: "celular",
+    texto: "lorem ipsum dolor sit amet"
+  }
+]
+
+arrProductos.forEach((prod) => {
+  const nuevoCard = Card(prod.titulo, prod.texto);
+  main.appendChild(nuevoCard);
+})
