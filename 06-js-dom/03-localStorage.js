@@ -35,7 +35,17 @@ form.addEventListener("submit", (evento) => {
 
   //ejecuta una función en un tiempo X (ms)
   setTimeout(() => {
-    localStorage.removeItem("correos");
+    //removeItem remueve un item de localStorage
+    // localStorage.removeItem("correos");
+
+    const info = localStorage.getItem("correos"); //string "[email, email]""
+    const arr = JSON.parse(info); //Array [email, email]
+    console.log({ arr })
+    arr.splice("coyote@acme.com", 1) //remover 01 item de un array
+    console.log("despues de eliminars", arr)
+    const arrAsString = JSON.stringify([...arr, "correcaminos@acme.com"]);
+    console.log({ arrAsString })
+    localStorage.setItem("correos",arrAsString); //guardar de nuevo
   }, 6000)
 })
 
