@@ -23,5 +23,19 @@ form.addEventListener("submit", (evento) => {
   //setItem clave , valor . solamente se puede guardar strings.
   localStorage.setItem("correos", jsonCorreos);
 
+  console.log("------------------");
 
+  const correosLeidos = localStorage.getItem("correos");
+
+  console.log({ correosLeidos });
+
+  const objCorreosLeidos = JSON.parse(correosLeidos);
+
+  console.log({ objCorreosLeidos });
+
+  //ejecuta una función en un tiempo X (ms)
+  setTimeout(() => {
+    localStorage.removeItem("correos");
+  }, 6000)
 })
+
