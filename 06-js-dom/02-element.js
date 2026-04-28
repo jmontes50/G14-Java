@@ -38,3 +38,37 @@ main.innerHTML = nuevoHTML;
 const btnSection1 = document.getElementById("btn-section1");
 
 console.log({ btnSection1 });
+
+//---------- CREATE ELEMENT ------------
+
+const subSeccion = document.createElement("div");
+
+console.log("subSeccion:", subSeccion);
+
+subSeccion.innerText = "Yo soy un div creado con createElement";
+
+//appendChild agrega como ultimo hijo a otro elemento de HTML
+main.appendChild(subSeccion);
+
+const imagen = document.createElement("img");
+
+console.log("imagen:", imagen);
+
+//setAttribute nos permite agregar o cambiar un atributo del elemento
+imagen.setAttribute("src", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTss3hiuUvRFTAfjaT-B8M6K7hvfgrwARsFIA&s");
+
+imagen.setAttribute("alt", "botella de agua");
+
+main.appendChild(imagen);
+
+console.log(main)
+
+/*
+const span = new Element("span");
+
+console.log("span:", span);
+
+span.innerText = "Soy un span creado con new Element()";
+
+main.appendChild(span);
+*/
