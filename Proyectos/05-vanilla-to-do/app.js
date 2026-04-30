@@ -4,6 +4,10 @@ const ulTareas = document.querySelector("#tareas");
 
 // console.log({ inputTarea, btnTarea, ulTareas })
 
+const dibujarTareas = (arrTareas) => {
+
+}
+
 const App = () => {
   const listaTareas = [];
 
