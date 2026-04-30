@@ -6,7 +6,7 @@
 const TareaComponent = (objTarea) => {
   const liTarea = document.createElement("li");
   liTarea.innerHTML = `
-  <li class="list-row flex gap-2">
+  <li class="list-row flex gap-2 items-center">
     <span>${objTarea.descripcion}</span>
     <button class="btn btn-sm">Finalizar</button>
   </li>

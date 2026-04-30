@@ -1,3 +1,5 @@
+import TareaComponent from "./TareaComponent.js";
+
 const inputTarea = document.querySelector("#input-tarea");
 const btnTarea = document.querySelector("#btn-tarea");
 const ulTareas = document.querySelector("#tareas");
@@ -5,7 +7,12 @@ const ulTareas = document.querySelector("#tareas");
 // console.log({ inputTarea, btnTarea, ulTareas })
 
 const dibujarTareas = (arrTareas) => {
-
+  ulTareas.innerHTML = "";
+  arrTareas.forEach(tarea => {
+    const elementTarea = TareaComponent(tarea);
+    // console.log(elementTarea)
+    ulTareas.appendChild(elementTarea);
+  });
 }
 
 const App = () => {
@@ -24,6 +31,8 @@ const App = () => {
     inputTarea.value = "";
 
     console.table(listaTareas);
+
+    dibujarTareas(listaTareas);
   });
 
 }
