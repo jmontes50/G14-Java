@@ -42,3 +42,14 @@ hacerPastel()
   console.log(err);
 })
 
+//------------------ try/catch
+
+const registro = (nombre) => {
+  try {
+    console.log("estoy en un registro.")
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+registro("Jorge");
