@@ -29,11 +29,14 @@ const comprarBebidas = () => new Promise((resolve, reject) => {
 hacerPastel()
 .then(((rpta) => { //resolve
   console.log(rpta)
+  // comprarBebidas()
+  // .then(() => {})
   //encadenamieto de promesas
   return comprarBebidas(); //retornamos una nueva promesa
 }))
 .then((rpta) => {
   console.log(rpta);
+  //return otrafuncionquemedaunapromesa()
 })
 .catch((err) => { //reject
   console.log(err);
