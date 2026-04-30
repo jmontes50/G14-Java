@@ -8,10 +8,17 @@ const TareaComponent = (objTarea) => {
   liTarea.innerHTML = `
   <li class="list-row flex gap-2 items-center">
     <span>${objTarea.descripcion}</span>
-    <button class="btn btn-sm">Finalizar</button>
+    <button class="btn btn-sm" data-selector="btn">
+      Finalizar
+    </button>
   </li>
   `;
 
+  const btn = liTarea.querySelector("button[data-selector='btn']")
+
+  btn.addEventListener("click", () => {
+    console.log("Eliminar!!!")
+  })
 
   return liTarea;
 }
