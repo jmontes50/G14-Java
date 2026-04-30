@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+  <main class="max-w-[500px] p-6 mt-4 border rounded mx-auto">
+    <fieldset class="fieldset">
+      <legend class="fieldset-legend">Ingrese su tarea</legend>
+      <div class="flex gap-2">
+        <input type="text" id="input-tarea" class="input grow" placeholder="Ej. Estudiar" />
+        <button id="btn-tarea" class="btn btn-secondary">Agregar</button>
+      </div>
+    </fieldset>
+    <hr>
+    <ul id="tareas" class="list p-4">
+
+    </ul>
+  </main>
+
+  <script src="./app.js" type="module"></script>
+</body>
+
+</html>
