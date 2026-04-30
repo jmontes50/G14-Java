@@ -6,10 +6,10 @@ const ulTareas = document.querySelector("#tareas");
 
 // console.log({ inputTarea, btnTarea, ulTareas })
 
-const dibujarTareas = (arrTareas) => {
+const dibujarTareas = (arrTareas, finalizarTarea) => {
   ulTareas.innerHTML = "";
-  arrTareas.forEach(tarea => {
-    const elementTarea = TareaComponent(tarea);
+  arrTareas.forEach((tarea, index) => {
+    const elementTarea = TareaComponent(tarea, index, finalizarTarea);
     // console.log(elementTarea)
     ulTareas.appendChild(elementTarea);
   });
@@ -32,7 +32,13 @@ const App = () => {
 
     console.table(listaTareas);
 
-    dibujarTareas(listaTareas);
+    const finalizarTarea = (indice) => {
+      listaTareas[indice].estado = true;
+      console.table(listaTareas);
+      dibujarTareas(listaTareas, finalizarTarea)
+    }
+
+    dibujarTareas(listaTareas, finalizarTarea);
   });
 
 }
