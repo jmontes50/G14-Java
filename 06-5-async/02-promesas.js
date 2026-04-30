@@ -13,16 +13,28 @@
 const hacerPastel = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      console.log("comprar bebidas");
-      // resolve("El pastel se horneo"); //como un return, esto es positivo
-      reject("El pastel se quemo");
+      // console.log("comprar bebidas");
+      resolve("El pastel se horneo"); //como un return, esto es positivo
+      // reject("El pastel se quemo");
     }, 2000)
   })
 }
+
+const comprarBebidas = () => new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("se consiguieron las bebidas")
+  }, 1000)
+})
+
 hacerPastel()
 .then(((rpta) => { //resolve
   console.log(rpta)
+  //encadenamieto de promesas
+  return comprarBebidas(); //retornamos una nueva promesa
 }))
+.then((rpta) => {
+  console.log(rpta);
+})
 .catch((err) => { //reject
   console.log(err);
 })
