@@ -3,7 +3,7 @@ import axios from "axios";
 const obtenerDatos = async () => {
   try {
     const respuestaCompleta = await axios.get("https://jsonplaceholder.typicode.com/posts");
-    console.log(respuestaCompleta)
+    console.log(respuestaCompleta); //mezclar headers y data en un mismo objeto.
   } catch (error) {
     console.log(error)
   }
