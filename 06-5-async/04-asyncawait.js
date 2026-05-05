@@ -1,9 +1,9 @@
-const tramite = () => {
-  return new Promise((resolve, reject) => {
-    resolve("Trámite exitoso");
-    // reject("Trámite fallido")
-  })
-}
+// const tramite = () => {
+//   return new Promise((resolve, reject) => {
+//     resolve("Trámite exitoso");
+//     // reject("Trámite fallido")
+//   })
+// }
 
 // const tramite = async () => {
 //   // return "Trámite exitoso";
@@ -13,15 +13,15 @@ const tramite = () => {
 //   console.log("holaaaa")
 // }
 
-// async function tramite () {
-//   const resultado = Math.random();
-//   console.log({ resultado })
-//   if(resultado >= 0.5) {
-//     return "Trámite exitoso"; //resolve
-//   }else {
-//     throw "trámite fallido"; //reject
-//   }
-// }
+async function tramite () {
+  const resultado = Math.random();
+  console.log({ resultado })
+  if(resultado >= 0.5) {
+    return "Trámite exitoso"; //resolve
+  }else {
+    throw "trámite fallido"; //reject
+  }
+}
 
 // capturando el resultado de la promesa con then y catch
 // tramite()
@@ -32,12 +32,16 @@ const tramite = () => {
 //   console.log(error)
 // })
 
+const solicitud = async () => {
+  return "solicitud exitosa"; //resolve
+}
 
 const obtenerResultado = async () => {
   //trycatch capturar el resultado de promesas y capturar excepciones/errores
   try { //intenta esto
     const resultadoTramite = await tramite(); //then
-    console.log({ resultadoTramite });
+    const resultadoSolicitud = await solicitud();
+    console.log({ resultadoTramite, resultadoSolicitud });
   } catch (error) { //en caso que falle, catch
     console.log({ error })
   }
