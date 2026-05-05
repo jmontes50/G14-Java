@@ -29,6 +29,8 @@ const SCvsALIANZA = (equipo) => new Promise((resolve, reject) => {
   }, 3000)
 })
 
+console.log("APOSTANDO")
+
 UTCvsUNIVERSITARIO("UNIVERSITARIO")
 .then((resPositivo) => { //resolve UTCvsUNIVERSITARIO
   console.log({ resPositivo })
@@ -41,3 +43,7 @@ UTCvsUNIVERSITARIO("UNIVERSITARIO")
 .catch((resNegativo) => { //reject, de las promesas que tengamos arriba
   console.error({ resNegativo })
 })
+
+console.log("ESTOY DEBAJO DE LAS PROMESAS ESPERANDO EL RESULTADO")
+
+console.log("FIN DEL SCRIPT")
