@@ -40,6 +40,7 @@ const obtenerResultado = async () => {
   //trycatch capturar el resultado de promesas y capturar excepciones/errores
   try { //intenta esto
     const resultadoTramite = await tramite(); //then
+
     const resultadoSolicitud = await solicitud();
     console.log({ resultadoTramite, resultadoSolicitud });
   } catch (error) { //en caso que falle, catch
