@@ -1,5 +1,7 @@
 import axios from "axios";
 
+console.log("NODE!!!")
+
 const obtenerDatos = async () => {
   try {
     const respuestaCompleta = await axios.get("https://jsonplaceholder.typicode.com/posts");
