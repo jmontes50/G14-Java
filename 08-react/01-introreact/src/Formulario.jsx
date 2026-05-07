@@ -1,4 +1,4 @@
-const Formulario = ({ titulo, textoInput }) => {
+const Formulario = ({ textoInput, titulo  }) => {
   // console.log("Formulario:", props);
   return (
     <>
