@@ -12,7 +12,6 @@ const Tarjeta = (props) => {
 
   const esAzul = false;
 
-
   return (
     //los estilos con style tienen que ser objetos
     <div style={estiloTarjeta}>
