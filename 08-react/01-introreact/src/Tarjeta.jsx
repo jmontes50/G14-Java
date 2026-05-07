@@ -10,11 +10,13 @@ const Tarjeta = (props) => {
     borderRadius: "10px"
   }
 
+  const esAzul = false;
+
 
   return (
     //los estilos con style tienen que ser objetos
     <div style={estiloTarjeta}>
-      <h3 style={{ color: "red" }}>
+      <h3 style={{ color: esAzul ? "blue" : "red" }}>
         {props.titulo}
       </h3>
       <p>{props.texto}</p>
