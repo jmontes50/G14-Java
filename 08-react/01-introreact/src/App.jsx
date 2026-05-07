@@ -1,3 +1,7 @@
+//en react .js o .jsx no necesitan extension en los import, otras extensiones si, ej .css
+import Tarjeta from "./Tarjeta";
+import Formulario from "./Formulario";
+
 /**
  * 1. la función que representa un componente de react debe iniciar con mayuscula
  * 2. debe retornar un elemento jsx/html
@@ -8,7 +12,11 @@
 const App = () => {
   const titulo = "Hola Mundo pero soy una variable";
 
-  // jsx es javascript extension, le da la posibilidad de escribir una sintaxis similar a html dentro de javascript, pero no es html
+  /*
+  jsx es javascript extension,
+  le da la posibilidad de escribir
+  una sintaxis similar a
+  html dentro de javascript, pero no es html*/
   /**
    * 1. no se pueden retornar varios elementos, deben estar envueltos en un contenedor padre
    * 1.1 en todo caso tenemos los fragmentos de react <></> para evitar agregar nodos innecesarios al DOM
@@ -35,6 +43,15 @@ const App = () => {
         <input type="text" id="nombre" name="nombre" />
         <button onClick={manejarClick}>Click!</button>
       </div>
+      <Formulario titulo="Suscribete" />
+      <hr />
+      <section>
+        {/* podemos usar las <Nombre> como una forma alternativa de llamar a las funciones que son componentes  */}
+        {/* Tarjeta({ titulo:"Producto 1", texto="Producto 1" }) */}
+        <Tarjeta titulo={"Producto 1"} texto="lorem1" />
+        <Tarjeta titulo={"Producto 2"} texto="lorem2" />
+        <Tarjeta titulo={"Producto 3"} texto={100000*2} />
+      </section>
     </>
 
   )
