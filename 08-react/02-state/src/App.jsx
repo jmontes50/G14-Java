@@ -5,6 +5,7 @@ const App = () => {
 
   //2. declarar el estado
   //const [getter, setter] = useState(valorInicial);
+  //porque cada vez que se actualiza el estado, el componente se vuelve a renderizar, entonces el getter siempre va a tener el valor actualizado
   const [contador, setContador] = useState(0);
 
   const manejarClick = () => {
