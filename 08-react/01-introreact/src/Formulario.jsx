@@ -1,12 +1,12 @@
-const Formulario = (props) => {
-  console.log("Formulario:", props);
+const Formulario = ({ titulo, textoInput }) => {
+  // console.log("Formulario:", props);
   return (
     <>
-      <h3>{props.titulo}</h3>
+      <h3>{titulo}</h3>
       <label htmlFor="input-suscribete" >Email</label>
       <input
       id="input-suscribete"
-      placeholder={props.textoInput}
+      placeholder={textoInput}
       type="email"
       />
     </>
