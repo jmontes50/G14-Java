@@ -44,6 +44,10 @@ const App = () => {
         <button onClick={manejarClick}>Click!</button>
       </div>
       <Formulario titulo="Suscribete" />
+      <Formulario
+        titulo="Registrate"
+        textoInput="Ingresa tu correo"
+      />
       <hr />
       <section>
         {/* podemos usar las <Nombre> como una forma alternativa de llamar a las funciones que son componentes  */}

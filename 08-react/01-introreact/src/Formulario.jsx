@@ -3,10 +3,10 @@ const Formulario = (props) => {
   return (
     <>
       <h3>{props.titulo}</h3>
-      <label for="input-suscribete" >Email</label>
+      <label htmlFor="input-suscribete" >Email</label>
       <input
       id="input-suscribete"
-      placeholder=""
+      placeholder={props.textoInput}
       type="email"
       />
     </>
