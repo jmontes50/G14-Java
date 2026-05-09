@@ -13,8 +13,24 @@ const App = () => {
 
   useEffect(() => {
     console.log("2. useEffect!!!!")
-    console.log("LOGGED:", logged);
-  }, [counter])
+    // console.log("LOGGED:", logged);
+
+    fetch("https://jsonplaceholder.typicode.com/posts")
+    .then((response) => {
+      if(response.status === 200){
+        return response.json();
+      }else{
+        throw new Error("Error en peticion")
+      }
+    })
+    .then((data) => {
+      console.table(data)
+    })
+    .catch((err) => {
+      console.log(err)
+    })
+
+  }, [])
 
   return (
     <div>
