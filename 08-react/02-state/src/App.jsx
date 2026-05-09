@@ -8,7 +8,11 @@ const App = () => {
   //porque cada vez que se actualiza el estado, el componente se vuelve a renderizar, entonces el getter siempre va a tener el valor actualizado
   const [contador, setContador] = useState(0);
   const [busqueda, setBusqueda] = useState("project hail mary");
-
+  const [gato, setGato] = useState({
+    nombre:"Ramón",
+    edad: 7,
+    color: "negro"
+  });
 
   const manejarClick = () => {
     //3. actualizar el estado
@@ -35,7 +39,13 @@ const App = () => {
         //onChange es un evento que detecta los cambios en un input
         onChange={manejarInput}
       />
-
+      <hr />
+      <button onClick={() => {
+        setGato({ ...gato, likes: 1 })
+      }}>
+        Agregar Likes
+      </button>
+      <p>{JSON.stringify(gato)}</p>
     </div>
   )
 }
