@@ -1,6 +1,10 @@
+import PlacesPage from "./pages/PlacesPage"
+
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <PlacesPage />
+    </div>
   )
 }
 
