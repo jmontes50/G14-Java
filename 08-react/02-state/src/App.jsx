@@ -42,6 +42,7 @@ const App = () => {
       <hr />
       <button onClick={() => {
         setGato({ ...gato, likes: 1 })
+        console.log(gato)
       }}>
         Agregar Likes
       </button>
