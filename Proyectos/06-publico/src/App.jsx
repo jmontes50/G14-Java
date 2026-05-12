@@ -2,7 +2,7 @@ import PlacesPage from "./pages/PlacesPage"
 
 const App = () => {
   return (
-    <div>
+    <div className="container p-10 mx-auto">
       <PlacesPage />
     </div>
   )
