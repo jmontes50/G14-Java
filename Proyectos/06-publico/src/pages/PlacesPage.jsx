@@ -22,6 +22,8 @@ const PlacesPage = () => {
 
   const paginationInfo = placesInfo?.pagination;
 
+  console.log({ paginationInfo })
+
   return (
     <div>
       <h1>Lugares de Arequipa</h1>
@@ -38,12 +40,13 @@ const PlacesPage = () => {
         />))}
       </div>
       <div className='flex w-full'>
-        <button className='btn btn-secondary' onClick={previousPage}>
+        {/* hacemos un renderizado condicional con un operador ternario */}
+        {paginationInfo?.hasPrevPage ? (<button className='btn btn-secondary' onClick={previousPage}>
           Página anterior
-        </button>
-        <button className='btn btn-secondary ml-auto' onClick={nextPage}>
+        </button>) : null}
+        {paginationInfo?.hasNextPage ? (<button className='btn btn-secondary ml-auto' onClick={nextPage}>
           Página siguiente
-        </button>
+        </button>) : null}
       </div>
     </div>
   )
