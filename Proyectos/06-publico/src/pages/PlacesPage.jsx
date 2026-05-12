@@ -10,12 +10,17 @@ const PlacesPage = () => {
 
   const URL = `https://api-donde.onrender.com/api/restaurants?page=${page}&limit=${limit}`;
 
-  //places aquí es un alias para data.
-  const { data:places, loading, error } = useGetAxios(URL);
+  //placesInfo ({data: [], pagination: {}}) aquí es un alias para data.
+  const { data:placesInfo, loading, error } = useGetAxios(URL);
 
   const previousPage = () => setPage(page - 1);
 
   const nextPage = () => setPage(page + 1);
+
+  //optional chaining ?.property para saber si una propiedad existe, de no hacerlo, da un undefined
+  const places = placesInfo?.data;
+
+  const paginationInfo = placesInfo?.pagination;
 
   return (
     <div>

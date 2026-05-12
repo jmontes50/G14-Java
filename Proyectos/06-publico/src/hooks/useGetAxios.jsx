@@ -7,16 +7,16 @@ const useGetAxios = (url) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null)
 
-  console.log({url})
+  // console.log({url})
 
   useEffect(() => {
     setLoading(true);
 
     axios.get(url)
     .then((response) => {
-      console.log(response.data)
+      // console.log(response.data)
       //Esto esta ajustado a nuestra API, sabemos que existe .data en la respuesta aparte de axios
-      setData(response.data.data);
+      setData(response.data);
       setLoading(true);
     })
     .catch((error) => {
