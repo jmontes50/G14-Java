@@ -12,6 +12,11 @@ const PlacesCard = ({ id, name, description, image_url }) => {
           {name}
         </h2>
         <p>{description}</p>
+        <div className="card-actions justify-end">
+          <button className="btn btn-primary">
+            Ver más!
+          </button>
+        </div>
       </div>
     </div>
   )

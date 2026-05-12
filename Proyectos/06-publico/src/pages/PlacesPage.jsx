@@ -37,7 +37,7 @@ const PlacesPage = () => {
   return (
     <div>
       <h1>Lugares de Arequipa</h1>
-      <div>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
         {/* renderizado de listas, es transformar un array de datos a algo que el navegador pueda entender */}
         {/* el key es importante para que React pueda identificar cada elemento de la lista, tiene que ser único */}
         {places.map(place => (<PlacesCard
@@ -46,10 +46,7 @@ const PlacesPage = () => {
           name={place.name}
           description={place.description}
           image_url={place.image_url}
-      />))}
-
-
-
+        />))}
       </div>
     </div>
   )
