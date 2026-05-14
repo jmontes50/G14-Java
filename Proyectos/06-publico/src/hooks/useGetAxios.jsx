@@ -21,7 +21,7 @@ const useGetAxios = (url) => {
     })
     .catch((error) => {
       setError(error);
-      setLoading(error);
+      setLoading(false);
     })
 
   }, [url]);
