@@ -1,6 +1,7 @@
 import useGetAxios from "../hooks/useGetAxios";
 import { useParams, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import { Heart } from "lucide-react";
 
 const PlaceInfoPage = () => {
 
@@ -66,9 +67,15 @@ const PlaceInfoPage = () => {
             <span>Distrito: {district_name}</span>
           </li>
         </ul>
-        <button className="btn btn-primary btn-lg w-full rounded-3xl" onClick={handleReserva}>
+        <div className="flex flex-row gap-2">
+          <button className="btn btn-primary btn-lg rounded-3xl grow" onClick={handleReserva}>
           Consultar Reserva
-        </button>
+          </button>
+          <button className="btn btn-secondary btn-lg rounded-full">
+            <Heart />
+          </button>
+        </div>
+
       </div>
       <div className="flex flex-col md:flex-row gap-4 col-span-2">
         {dishes && dishes.map((dish) => (
