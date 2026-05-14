@@ -1,5 +1,6 @@
 import useGetAxios from "../hooks/useGetAxios";
-import { data, useParams } from "react-router-dom"
+import { data, useParams } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const PlaceInfoPage = () => {
 
@@ -12,8 +13,22 @@ const PlaceInfoPage = () => {
 
   console.log({ restaurant, loading, error });
 
-  const handleReserva = () => {
-    alert("Reserva solicitada!")
+  const handleReserva = async () => {
+    const result = await Swal.fire({
+      title: "Reserva solicitada!",
+      text: "Te responderemos en las siguientes horas",
+      icon: "success",
+      theme: "dark",
+      showCancelButton: true,
+      cancelButtonText: "Quedarme aquí",
+      showConfirmButton: true,
+      confirmButtonText: "Regresar a Inicio"
+    })
+   if(result.isConfirmed) {
+    alert("Confirmado")
+   }else {
+    alert("Cancelo")
+   }
   }
 
   if(error) {
