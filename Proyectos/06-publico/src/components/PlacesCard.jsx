@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const PlacesCard = ({ id, name, description, image_url }) => {
   return (
     <div className="card bg-base-100 shadow-sm">
@@ -13,9 +15,10 @@ const PlacesCard = ({ id, name, description, image_url }) => {
         </h2>
         <p>{description}</p>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary">
+          {/* Link en react seria el equivalente a un <a> */}
+          <Link to={`/restaurant/${id}`} className="btn btn-primary">
             Ver más!
-          </button>
+          </Link>
         </div>
       </div>
     </div>
