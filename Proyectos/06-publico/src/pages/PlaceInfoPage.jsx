@@ -12,6 +12,8 @@ const PlaceInfoPage = () => {
 
   console.log({ restaurant, loading, error });
 
+
+
   if(error) {
     return <h4 className="text-2xl">Ocurrió un error intente de nuevo</h4>
   }
@@ -46,6 +48,24 @@ const PlaceInfoPage = () => {
           </li>
         </ul>
       </div>
+      <div className="flex flex-col md:flex-row gap-4 col-span-2">
+        {dishes && dishes.map((dish, i) => (
+          <div
+            className="card border border-white rounded p-4 w-full gap-2"
+            key={`dish-${dish.id}`}
+          >
+            <div className="w-full h-60 overflow-hidden rounded">
+              <img src={dish.image_url} alt={dish.name} className="w-full h-full object-cover" />
+            </div>
+            <h5 className="text-md font-bold">{dish.name}</h5>
+            <p className="text-sm text-ellipsis">{dish.description}</p>
+            <div>
+              <span className="font-bold text-sm">Precio:</span> <span>S/. {dish.price}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+
     </div>
   )
 }
