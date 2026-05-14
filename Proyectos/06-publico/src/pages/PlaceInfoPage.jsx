@@ -1,5 +1,5 @@
 import useGetAxios from "../hooks/useGetAxios";
-import { data, useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const PlaceInfoPage = () => {
@@ -10,6 +10,8 @@ const PlaceInfoPage = () => {
 
   //placesInfo ({data: [], pagination: {}}) aquí es un alias para data.
   const { data:restaurant, loading, error } = useGetAxios(URL);
+
+  const navigate = useNavigate();
 
   console.log({ restaurant, loading, error });
 
@@ -25,7 +27,7 @@ const PlaceInfoPage = () => {
       confirmButtonText: "Regresar a Inicio"
     })
    if(result.isConfirmed) {
-    alert("Confirmado")
+    navigate("/");
    }else {
     alert("Cancelo")
    }
