@@ -12,7 +12,9 @@ const PlaceInfoPage = () => {
 
   console.log({ restaurant, loading, error });
 
-
+  const handleReserva = () => {
+    alert("Reserva solicitada!")
+  }
 
   if(error) {
     return <h4 className="text-2xl">Ocurrió un error intente de nuevo</h4>
@@ -40,13 +42,16 @@ const PlaceInfoPage = () => {
       </div>
       <div className="card col-span-2 md:col-span-1 rounded bg-base-200 p-4">
         <h4 className="text-lg font-bold mb-2">Info</h4>
-        <ul className="list">
+        <ul className="list mb-3">
           <li className="flex flex-col gap-2">
             <span>Dirección: {address}</span>
             <span>Teléfono: {phone}</span>
             <span>Distrito: {district_name}</span>
           </li>
         </ul>
+        <button className="btn btn-primary btn-lg w-full rounded-3xl" onClick={handleReserva}>
+          Consultar Reserva
+        </button>
       </div>
       <div className="flex flex-col md:flex-row gap-4 col-span-2">
         {dishes && dishes.map((dish) => (
