@@ -13,11 +13,11 @@ const useGetAxios = (url) => {
     setLoading(true);
 
     axios.get(url)
-    .then((response) => {
+    .then((response) => {2
       // console.log(response.data)
       //Esto esta ajustado a nuestra API, sabemos que existe .data en la respuesta aparte de axios
       setData(response.data);
-      setLoading(true);
+      setLoading(false);
     })
     .catch((error) => {
       setError(error);
