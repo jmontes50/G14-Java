@@ -49,7 +49,7 @@ const PlaceInfoPage = () => {
         </ul>
       </div>
       <div className="flex flex-col md:flex-row gap-4 col-span-2">
-        {dishes && dishes.map((dish, i) => (
+        {dishes && dishes.map((dish) => (
           <div
             className="card border border-white rounded p-4 w-full gap-2"
             key={`dish-${dish.id}`}
