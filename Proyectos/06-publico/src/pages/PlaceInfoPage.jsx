@@ -1,11 +1,17 @@
+import { useContext } from "react";
 import useGetAxios from "../hooks/useGetAxios";
 import { useParams, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import { FavoriteContext } from "../context/favoriteContext";
 import { Heart } from "lucide-react";
 
 const PlaceInfoPage = () => {
 
   const { id } = useParams();
+
+  const { state, dispatch } = useContext(FavoriteContext);
+
+  console.log({ state, dispatch })
 
   const URL = `https://api-donde.onrender.com/api/restaurants/${id}`;
 
@@ -35,7 +41,9 @@ const PlaceInfoPage = () => {
   }
 
   const handleFavorito = () => {
-    alert("Agregado como favorito!");
+    // alert("Agregado como favorito!");
+    dispatch({ type: "AGREGAR", payload: { ...restaurant.data }});
+    alert("Restaurante agregado!!");
   }
 
   if(error) {
