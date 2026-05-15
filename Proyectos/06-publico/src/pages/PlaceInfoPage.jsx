@@ -34,6 +34,10 @@ const PlaceInfoPage = () => {
    }
   }
 
+  const handleFavorito = () => {
+    alert("Agregado como favorito!");
+  }
+
   if(error) {
     return <h4 className="text-2xl">Ocurrió un error intente de nuevo</h4>
   }
@@ -62,7 +66,7 @@ const PlaceInfoPage = () => {
         <h4 className="text-lg font-bold mb-2">Info</h4>
         <ul className="list mb-3">
           <li className="flex flex-col gap-2">
-            <span>Dirección: {address}</span>
+            <span>: {address}</span>
             <span>Teléfono: {phone}</span>
             <span>Distrito: {district_name}</span>
           </li>
@@ -71,7 +75,7 @@ const PlaceInfoPage = () => {
           <button className="btn btn-primary btn-lg rounded-3xl grow" onClick={handleReserva}>
           Consultar Reserva
           </button>
-          <button className="btn btn-secondary btn-lg rounded-full">
+          <button className="btn btn-secondary btn-lg rounded-full" onClick={handleFavorito}>
             <Heart />
           </button>
         </div>
