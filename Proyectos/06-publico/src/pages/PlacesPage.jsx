@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import axios from "axios";
+import { FavoriteContext } from '../context/favoriteContext';
 import PlacesCard from '../components/PlacesCard';
 import useGetAxios from '../hooks/useGetAxios';
 
@@ -12,6 +13,8 @@ const PlacesPage = () => {
 
   //placesInfo ({data: [], pagination: {}}) aquí es un alias para data.
   const { data:placesInfo, loading, error } = useGetAxios(URL);
+
+  const { state } = useContext(FavoriteContext);
 
   const previousPage = () => setPage(page - 1);
 
@@ -26,7 +29,11 @@ const PlacesPage = () => {
 
   return (
     <div>
-      <h1>Lugares de Arequipa</h1>
+      <div className='px-4 py-6 mb-6 flex rounded-4xl border-2 border-white items-center'>
+        <h1 className='text-4xl font-bold'>Lugares de Arequipa</h1>
+        <span className='text-secondary text-3xl ml-auto'>Favoritos: {state.favorites.length}</span>
+      </div>
+
       <div className='grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-10'>
         {/* renderizado de listas, es transformar un array de datos a algo que el navegador pueda entender */}
         {/* el key es importante para que React pueda identificar cada elemento de la lista, tiene que ser único */}
