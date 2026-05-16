@@ -4,7 +4,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { FavoriteContext } from "../context/favoriteContext";
 import { Heart } from "lucide-react";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup, useMapEvents } from "react-leaflet";
 
 const PlaceInfoPage = () => {
 
@@ -59,6 +59,17 @@ const PlaceInfoPage = () => {
 
   const coords = [lat, lng];
   // console.table({ address, phone, district_name, dishes })
+
+  const LocationMarker = () => {
+    const map = useMapEvents ({
+      click(ev){
+        console.log(ev);
+        const { latlng: { lat, lng }} = ev;
+        map.flyTo([lat, lng]);
+      }
+    })
+    return <></>
+  }
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -118,6 +129,7 @@ const PlaceInfoPage = () => {
               <span>Encuenta a {name} en {address}</span>
             </Popup>
           </Marker>
+          <LocationMarker />
         </MapContainer>
       </div>)}
 
