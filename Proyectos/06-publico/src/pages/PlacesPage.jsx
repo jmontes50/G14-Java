@@ -1,6 +1,7 @@
 import { useState, useContext } from 'react';
 import axios from "axios";
 import { FavoriteContext } from '../context/favoriteContext';
+import { SearchContext } from '../context/searchContext';
 import PlacesCard from '../components/PlacesCard';
 import useGetAxios from '../hooks/useGetAxios';
 
@@ -9,7 +10,9 @@ const PlacesPage = () => {
   const [limit, setLimit] = useState(6);
   const [query, setQuery] = useState("");
 
-  const URL = `https://api-donde.onrender.com/api/restaurants?page=${page}&limit=${limit}`;
+  const { search } = useContext(SearchContext);
+
+  const URL = `https://api-donde.onrender.com/api/restaurants?page=${page}&limit=${limit}&search=${search}`;
 
   //placesInfo ({data: [], pagination: {}}) aquí es un alias para data.
   const { data:placesInfo, loading, error } = useGetAxios(URL);

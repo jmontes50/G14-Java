@@ -4,10 +4,12 @@ import { SearchContext } from "../context/searchContext";
 
 const Navbar = () => {
   const [inputSearch, setInputSearch] = useState("");
+
   const { search, setSearch } = useContext(SearchContext);
 
   const manejarSubmit = (e) => {
     e.preventDefault();
+    setSearch(inputSearch);
   }
 
   return (
