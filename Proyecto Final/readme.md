@@ -36,7 +36,7 @@ El proyecto debe implementar las **4 operaciones CRUD** sobre un recurso (ejempl
 5. **UI mínima:** que funcione en desktop principalmente, ideal que también en mobile.
 
 > [!NOTE]
-> Pueden tomar como referencia el proyecto admin
+> Pueden tomar como referencia el primer proyecto pero reduciendolo solo a usar useState y useEffect adaptandolo a su API, temas como mapas,context,reducer No son requeridos.
 
 ---
 
@@ -100,12 +100,12 @@ npm run dev
 ---
 
 ## Entregables
-- Código en el repositorio con este README actualizado.
+- Código en el repositorio.
 
 ---
 
 ## Aspectos a evaluar
-- **Funcionalidad CRUD:** debe crear, listar, editar y eliminar correctamente en la API de backend.
+- **Funcionalidad CRUD:** DEBE listar y crear recursos correctamente en la API de backend (Ej, listar vehiculos, crear un nuevo vehiculo, depende de la temática)
 - **Código y arquitectura:** componentes claros y separados, código entendible.
 - **Estado y efectos:** uso adecuado de `useState` y `useEffect`.
 - **Despliegue del proyecto** en vercel, netlify o servicios similares.
