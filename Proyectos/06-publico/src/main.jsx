@@ -4,6 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import { FavoritesContextProvider } from './context/favoriteContext.jsx'
 import { SearchContextProvider } from './context/searchContext.jsx'
+import "leaflet/dist/leaflet.css"
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
