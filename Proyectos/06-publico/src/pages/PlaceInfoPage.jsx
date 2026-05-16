@@ -4,6 +4,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { FavoriteContext } from "../context/favoriteContext";
 import { Heart } from "lucide-react";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
 const PlaceInfoPage = () => {
 
@@ -21,6 +22,7 @@ const PlaceInfoPage = () => {
   const navigate = useNavigate();
 
   console.log({ restaurant, loading, error });
+
 
   const handleReserva = async () => {
     const result = await Swal.fire({
@@ -53,8 +55,9 @@ const PlaceInfoPage = () => {
     return <h4 className="text-2xl">Espere por favor...</h4>
   }
 
-  const { data: { name, address, phone, district_name, dishes, image_url, description }} = restaurant;
+  const { data: { name, address, phone, district_name, dishes, image_url, description, lat, lng }} = restaurant;
 
+  const coords = [lat, lng];
   // console.table({ address, phone, district_name, dishes })
 
   return (
@@ -106,6 +109,17 @@ const PlaceInfoPage = () => {
           </div>
         ))}
       </div>
+      {restaurant?.data && (<div className="col-span-2 w-full h-100 border">
+        <MapContainer center={coords} zoom={13} scrollWheelZoom={false}>
+          <TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+          <Marker position={coords}>
+            <Popup>
+              <span>Encuenta a {name} en {address}</span>
+            </Popup>
+          </Marker>
+        </MapContainer>
+      </div>)}
 
     </div>
   )
