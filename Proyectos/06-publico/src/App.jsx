@@ -1,10 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import PlacesPage from "./pages/PlacesPage"
 import PlaceInfoPage from "./pages/PlaceInfoPage"
-
+import Navbar from "./components/Navbar"
 const App = () => {
   return (
     <BrowserRouter>
+    <Navbar />
       <div className="container p-10 mx-auto">
         <Routes>
           <Route path="/" element={<PlacesPage />} />
